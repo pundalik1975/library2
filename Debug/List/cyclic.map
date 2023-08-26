@@ -1,0 +1,61 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+segment_table                                                                     0x0160      34
+display_buffer                                                                    0x0182      18
+dummy                                                                             0x0194       2
+dummy2                                                                            0x0196       2
+message_set                                                                       0x0198     264
+set                                                                               0x02A0      20
+key_count                                                                         0x02B4       2
+key_rst_cnt                                                                       0x02B6       2
+set_count                                                                         0x02B8       2
+min_cnt                                                                           0x02BA       2
+rst_count                                                                         0x02BC       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ee_set                                                                            0x0000      30
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+led_status                                                                        R4,R5        2
+set_fl                                                                            R2.0      1bit
+sec_fl                                                                            R2.1      1bit
+blink_flag                                                                        R2.2      1bit
+blinking                                                                          R2.3      1bit
+blink_digit                                                                       R6,R7        2
+display_count                                                                     R8,R9        2
+ontime                                                                            R10,R11      2
+set_item                                                                          R12,R13      2
+key1_old                                                                          R2.4      1bit
+key2_old                                                                          R2.5      1bit
+key3_old                                                                          R2.6      1bit
+key4_old                                                                          R2.7      1bit
+on_fl                                                                             R3.0      1bit
+min_fl                                                                            R3.1      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+clear_display                                                                     0x000F7      6
+led_check                                                                         0x000FD     20
+timer1_ovf_isr                                                                    0x00111     42
+display_put                                                                       0x0013B     96
+display_out                                                                       0x0019B    109
+display_check                                                                     0x00208     17
+increment_value                                                                   0x00219     42
+decrement_value                                                                   0x00243     43
+ent_check                                                                         0x0026E     42
+inc_check                                                                         0x00298     19
+dec_check                                                                         0x002AB     19
+shf_check                                                                         0x002BE     15
+key_check                                                                         0x002CD     65
+check_set                                                                         0x0030E     46
+reset_timer                                                                       0x0033C     35
+process_check                                                                     0x0035F     34
+eeprom_transfer                                                                   0x00381     10
+init                                                                              0x0038B     50
+main                                                                              0x003BD     38

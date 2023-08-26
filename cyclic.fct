@@ -1,0 +1,4 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"cyclicon1.c" LINE:678
+process_check DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"cyclicon1.c" LINE:532
+increment_value DSTACK_USAGE:16 DSTACK_LEVEL:16 FILE:"cyclicon1.c" LINE:337
+timer1_ovf_isr DSTACK_USAGE:5 DSTACK_LEVEL:21 FILE:"cyclicon1.c" LINE:129
